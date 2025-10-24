@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Space</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="gallery">
+    <img src="PRESADO_BONUS.png" alt="Image 1" class="gallery-img">
+    <img src="TAN_BONUS.png" alt="Image 2" class="gallery-img">
+    <img src="PANOPIO_LEANN.jpg" alt="Image 3" class="gallery-img">
+    <img src="Moynihan _ Bonus.jpeg" alt="Image 4" class="gallery-img">
+    <img src="LUNA_BONUS.PNG" alt="Image 5" class="gallery-img">
+    <img src="Jacobo_Bounus.png" alt="Image 6" class="gallery-img">
+  </div>
+
+  <!-- Modal Section -->
+  <div class="modal" id="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content-wrapper">
+      <img class="modal-content" id="modal-img">
+      <div class="caption">How are you feeling today?</div>
+
+      <!-- Upload section -->
+      <div class="upload-section">
+        <label for="imageUpload" class="upload-label">+ Add Image</label>
+        <input type="file" id="imageUpload" accept="image/*" multiple hidden>
+      </div>
+
+      <!-- Horizontal scroll with arrows -->
+      <div class="scroll-wrapper">
+        <button class="scroll-btn left" id="scroll-left">&#10094;</button>
+        <div class="scroll-container" id="scroll-container"></div>
+        <button class="scroll-btn right" id="scroll-right">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
